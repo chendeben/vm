@@ -186,6 +186,7 @@
 		
 		var pattern = /http:\/\/v.qq.com\//,
 		str = $(e.target).val();
+		if(str)
 		if(pattern.test(str)){
 			var htmls = "<iframe src=http://v.rpsofts.com/i.php?url="+str+" frameborder='0' autoplay='1' scrolling='1' width='98%' height='98%' allowtransparency></iframe>";
 			$("#v2").html(htmls).css({
